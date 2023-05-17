@@ -25,7 +25,7 @@ Select * From Students
 SELECT AVG(Salary) AS AverageSalary FROM Students;
 --ortalama maasdan yuxari maas alan isciler
 SELECT Name, Surname, Salary FROM Students WHERE Salary > (SELECT AVG(Salary) FROM Students);
---Max, Min maaþlarý çýxarmaq üçün:
+--Max, Min maaÃ¾larÃ½ Ã§Ã½xarmaq Ã¼Ã§Ã¼n:
 SELECT MAX(Salary) AS MaxSalary, MIN(Salary) AS MinSalary FROM Students;
 
 --Task 2
@@ -35,9 +35,9 @@ USE Market;
 
 CREATE TABLE Products (
     Id int,
-    Name VARCHAR(255),
+    Name nvarchar(255),
     Price DECIMAL(10, 2),
-    Brand VARCHAR(255)
+    Brand nvarchar(255)
 );
 
 INSERT INTO Products (Id, Name, Price, Brand)
